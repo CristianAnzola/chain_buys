@@ -15,9 +15,10 @@ class CreateTbProductoTable extends Migration
     {
         Schema::create('tb_producto', function (Blueprint $table) {
             $table->Integer('pro_id');
-            $table->Integer('pro_bodega');
+            $table->Integer('pro_proveedor');
             $table->string('pro_nombre');
-            $table->string('pro_costo');
+            $table->string('pro_descripcion');
+            $table->string('pro_imagen');
         });
     }
 

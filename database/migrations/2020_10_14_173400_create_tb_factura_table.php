@@ -14,8 +14,16 @@ class CreateTbFacturaTable extends Migration
     public function up()
     {
         Schema::create('tb_factura', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->Integer('fac_id');
+            $table->Integer('fac_empresa');
+            $table->Integer('fac_codigo');
+            $table->Integer('fac_usuario');
+            $table->string('fac_cliente');
+            $table->Integer('fac_producto');
+            $table->string('fac_telefono');
+            $table->string('fac_fecha');
+            $table->double('fac_subtotal', 10, 2);
+            $table->double('fac_total', 10, 2);
         });
     }
 
