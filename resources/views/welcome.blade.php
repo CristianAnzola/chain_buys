@@ -14,7 +14,12 @@
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                </div>
+            </div>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
