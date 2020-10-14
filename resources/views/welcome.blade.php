@@ -39,7 +39,7 @@
                       <button class="dropdown-item" type="button">Registro</button>
                     </div>
                 </div>                  
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div id="carrusel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img src="" class="d-block w-100" alt="..." placeholder="imagen">
