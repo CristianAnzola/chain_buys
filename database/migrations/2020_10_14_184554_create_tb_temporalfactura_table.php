@@ -14,8 +14,16 @@ class CreateTbTemporalfacturaTable extends Migration
     public function up()
     {
         Schema::create('tb_temporalfactura', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->Integer('temp_usu_docu');
+            $table->Integer('temp_empresa');
+            $table->Integer('temp_codigo');
+            $table->Integer('temp_usuario');
+            $table->string('temp_cliente');
+            $table->Integer('temp_producto');
+            $table->string('temp_telefono');
+            $table->string('temp_fecha');
+            $table->double('temp_subtotal');
+            $table->double('temp_total');
         });
     }
 
