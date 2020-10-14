@@ -12,7 +12,6 @@
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link  href="{{asset('')}}"    rel="stylesheet">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -31,10 +30,28 @@
             @endif
 
             <div class="content">
-                 <div id="imagen">
-                   <img>   
-               
-                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="" alt="">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <button class="dropdown-item" type="button">Inicio Sesion</button>
+                      <button class="dropdown-item" type="button">Registro</button>
+                    </div>
+                </div>                  
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="" class="d-block w-100" alt="..." placeholder="imagen">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                         <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>    
             </div>
         </div>
     </body>
