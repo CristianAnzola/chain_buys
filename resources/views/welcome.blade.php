@@ -12,6 +12,7 @@
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link  href="{{asset('')}}"    rel="stylesheet">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -30,11 +31,10 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                   
-                </div>
-
+                 <div id="imagen">
+                   <img>   
                
+                </div>
             </div>
         </div>
     </body>
