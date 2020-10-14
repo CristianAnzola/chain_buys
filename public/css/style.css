@@ -4,5 +4,9 @@
 }
 
 body {
-    background-color: aqua;
+    background: #5492CC;
+}
+
+#head {
+    background: #003B6C;
 }
