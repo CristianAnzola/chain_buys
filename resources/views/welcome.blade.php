@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <p  id="pie">
-                        <img src="{{ asset('img/logo.png') }}" width="100px"><br><br>
+                        <img src="{{ asset('img/logo.png') }}" width="100px"><br>
                         © chain buys 2020
                     </p>
                 </div>
