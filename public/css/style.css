@@ -33,6 +33,18 @@ width: 100%;
     text-align: center;
 }
 
+#cont{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 #footer {
     background: #003B6C;
+}
+
+#pie{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
