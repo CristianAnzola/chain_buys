@@ -87,6 +87,6 @@ body {
 .card-body{
     background-color: #DDDDDD;
 }
-#contenedor{
-    top:50px;
+.row justify-content-center{
+    top: 50px;
 }
