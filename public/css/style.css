@@ -21,6 +21,9 @@ body {
     color: white;
     font-size: x-large;
 }
+#carrrusel{
+    height: 350px;
+}
 
 #footer {
     background: #003B6C;
