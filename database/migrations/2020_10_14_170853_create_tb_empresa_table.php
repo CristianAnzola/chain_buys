@@ -17,7 +17,7 @@ class CreateTbEmpresaTable extends Migration
             $table->Integer('emp_nit');
             $table->string('emp_nombre');
             $table->string('emp_direccion');
-            $table->increment('emp_numfactura');
+            $table->Integer('emp_numfactura');
         });
     }
 
