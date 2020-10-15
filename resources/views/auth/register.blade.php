@@ -61,6 +61,36 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Genero') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="genero" type="text" class="form-control @error('genero') is-invalid @enderror" name="genero" value="{{ old('genero') }}" required autocomplete="genero" autofocus>
+
+                                @error('genero')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Tienda') }}</label>
+
+                            <div class="col-md-6">
+                                <select id="tienda" type="" class="form-control @error('tienda') is-invalid @enderror" name="tienda" value="{{ old('tienda') }}" required autocomplete="tienda">
+                                    <object data="" type=""></object>
+                                </select>
+
+                                @error('tienda')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
