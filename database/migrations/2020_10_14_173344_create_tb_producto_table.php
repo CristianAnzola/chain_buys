@@ -14,7 +14,7 @@ class CreateTbProductoTable extends Migration
     public function up()
     {
         Schema::create('tb_producto', function (Blueprint $table) {
-            $table->Integer('pro_id');
+            $table->Integer('pro_id')->primary();
             $table->Integer('pro_proveedor');
             $table->string('pro_nombre');
             $table->string('pro_descripcion');

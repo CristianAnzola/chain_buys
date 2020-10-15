@@ -14,7 +14,7 @@ class CreateTbAuxtemporalfacturaTable extends Migration
     public function up()
     {
         Schema::create('tb_auxtemporalfactura', function (Blueprint $table) {
-            $table->Integer('axt_id');
+            $table->Integer('axt_id')->primary();
             $table->string('axt_producto');
             $table->string('axt_nombre');
             $table->Integer('axt_cantidad');

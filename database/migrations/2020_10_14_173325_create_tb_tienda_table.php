@@ -14,7 +14,8 @@ class CreateTbTiendaTable extends Migration
     public function up()
     {
         Schema::create('tb_tienda', function (Blueprint $table) {
-            $table->Integer('tie_id');
+            $table->Integer('tie_id')->primary();
+            $table->Integer('tie_bodega');
             $table->Integer('tie_empresa');
             $table->string('tie_nombre');
             $table->string('tie_direccion');

@@ -14,8 +14,7 @@ class CreateTbBodegaTable extends Migration
     public function up()
     {
         Schema::create('tb_bodega', function (Blueprint $table) {
-            $table->Integer('bod_id');
-            $table->Integer('bod_tienda');
+            $table->Integer('bod_id')->primary();
             $table->string('bod_nombre');
             $table->string('bod_direccion');
             $table->string('bod_encargado');

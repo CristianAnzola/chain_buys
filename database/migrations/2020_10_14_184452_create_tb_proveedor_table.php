@@ -14,7 +14,7 @@ class CreateTbProveedorTable extends Migration
     public function up()
     {
         Schema::create('tb_proveedor', function (Blueprint $table) {
-            $table->Integer('prv_id');
+            $table->Integer('prv_id')->primary();
             $table->string('prv_nombre');
             $table->string('prv_telefono');
             $table->string('prv_direccion');

@@ -14,7 +14,7 @@ class CreateTbNotificacionesTable extends Migration
     public function up()
     {
         Schema::create('tb_notificaciones', function (Blueprint $table) {
-            $table->Integer('not_id');
+            $table->Integer('not_id')->primary();
             $table->string('not_titulo');
             $table->string('not_mensaje');
             $table->date('not_fecha');

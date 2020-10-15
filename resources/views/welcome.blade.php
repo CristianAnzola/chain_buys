@@ -13,6 +13,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <link rel="icon" type="{{ asset('img/') }}" href="img/logo.png">
     </head>
     <body>
         <div class="container-fluid">
