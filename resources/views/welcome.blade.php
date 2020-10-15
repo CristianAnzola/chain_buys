@@ -28,7 +28,7 @@
                                 @else
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="{{ asset('img/logo.png') }}" alt="">
+                                        <img src="{{ asset('img/menu.png') }}" width="50px" alt="">
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a href="{{ route('login') }}"><button class="dropdown-item" type="button">Iniciar Sesion</button></a>
