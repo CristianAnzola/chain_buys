@@ -14,7 +14,7 @@ class CreateTbEmpresaTable extends Migration
     public function up()
     {
         Schema::create('tb_empresa', function (Blueprint $table) {
-            $table->Integer('emp_nit');
+            $table->Integer('emp_nit')->primary();
             $table->string('emp_nombre');
             $table->string('emp_direccion');
             $table->Integer('emp_numfactura');

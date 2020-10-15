@@ -19,7 +19,7 @@ class CreateTbAuxtemporalfacturaTable extends Migration
             $table->string('axt_nombre');
             $table->Integer('axt_cantidad');
             $table->double('axt_costos');
-            $table->Integer('axt_fac_id');
+            $table->Integer('axt_usu_docu');
         });
     }
 
