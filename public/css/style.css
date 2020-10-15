@@ -79,9 +79,7 @@ body {
 }
 .card-header{
     background-color: #ffa554;
-    color: beige;
-    text-align: center;
-    font-size: 25px;
+    position: relative;
     padding: 20px;
     padding-top: 25px;
 }
