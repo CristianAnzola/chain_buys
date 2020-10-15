@@ -22,7 +22,10 @@ body {
     font-size: x-large;
 }
 #carrrusel{
-    height: 350px;
+    width: 1000px;
+}
+img{
+width: 100%;
 }
 
 #footer {
