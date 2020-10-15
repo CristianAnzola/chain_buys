@@ -90,3 +90,7 @@ body {
 .card-body{
     background-color: #DDDDDD;
 }
+#factura{
+    border-radius: 15px;
+    background:#ffa554;
+}
