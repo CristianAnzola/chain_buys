@@ -49,7 +49,7 @@
                         <div id="carrusel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                  <img src="{{ asset('img/1.jpg') }}" class="d-block w-100" alt="..." placeholder="imagen">
+                                  <img src="{{ asset('img/Desarrollo-de-Productos-para-Retail1.jpg') }}" class="d-block w-100" alt="..." placeholder="imagen">
                                 </div>
                                 <div class="carousel-item">
                                   <img src="{{ asset('img/2.jpg') }}" class="d-block w-100" alt="...">
