@@ -18,15 +18,27 @@
         <div class="container-fluid">
             <div id="head" class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="d-flex bd-highlight mb-3">
-                        <div class="p-2 bd-highlight"><a href="{{ url('/') }}"><p id="home">Chain Buys</p></a></div>
-                        <div class="p-2 bd-highlight"></div>
-                        <div class="ml-auto p-2 bd-highlight">
+                    <div class="row">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" id="nav1">
+                            <a href="{{ url('/') }}"><p id="home">Chain Buys</p></a>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                            <img id="logo" src="{{ asset('img/logo.png') }}" width="150px">
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+
+                        </div>
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                             @if (Route::has('login'))
                                 @auth
+                                <div id="nav1">
                                     <a href="{{ url('/home') }}">Chain Buys</a>
+                                </div>
                                 @else
-                                    <div class="btn-group">
+                                    <div class="btn-group" id="nav">
                                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="{{ asset('img/menu.png') }}" width="50px" alt="">
                                         </button>
@@ -80,8 +92,17 @@
                 </div>
             </div>
             <div class="row" id="footer">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <p  id="pie">© chain buys 2020</p>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <p  id="pie">
+                        <img src="{{ asset('img/logo.png') }}" width="100px"><br><br>
+                        © chain buys 2020
+                    </p>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    
                 </div>
             </div>
         </div>
