@@ -79,9 +79,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Tienda') }}</label>
 
                             <div class="col-md-6">
-                                <select id="tienda" type="" class="form-control @error('tienda') is-invalid @enderror" name="tienda" value="{{ old('tienda') }}" required autocomplete="tienda">
-                                    <object data="" type=""></object>
-                                </select>
+                                <input id="tienda" type="text" class="form-control @error('tienda') is-invalid @enderror" name="tienda" value="{{ old('tienda') }}" required autocomplete="tienda">
 
                                 @error('tienda')
                                     <span class="invalid-feedback" role="alert">
