@@ -61,8 +61,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    s
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div id="tex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, possimus magni veniam culpa vitae nesciunt nostrum accusantium at natus corporis voluptatem optio in! Provident minus, corporis alias blanditiis velit explicabo!</div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    
                 </div>
             </div>
         </div>
