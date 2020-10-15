@@ -4,7 +4,7 @@
 <div class="container"><br><br><br><br><br>
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card"><br><br><br><br>
                 <div class="card-header">{{ __('Verifique su dirección de correo electrónico') }}</div>
 
                 <div class="card-body">
