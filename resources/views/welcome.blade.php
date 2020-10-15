@@ -16,23 +16,22 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div id="head" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    @if (Route::has('login'))
+                        <div class="top-right links">
+                            @auth
+                                <a href="{{ url('/home') }}">Chain Buys</a>
+                            @else
+                                <a href="{{ route('login') }}">Iniciar Sesion</a>
 
+                                @if (Route::has('register'))
+                                    <a href="{{ route('register') }}">Registro</a>
+                                @endif
+                            @endauth
+                        </div>
+                    @endif
                 </div>
             </div>
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Chain Buys</a>
-                    @else
-                        <a href="{{ route('login') }}">Iniciar Sesion</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registro</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
 
             <div class="content">
                 <div class="btn-group">
