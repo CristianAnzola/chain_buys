@@ -79,6 +79,9 @@ body {
 }
 .card-header{
     background-color: #003b6c;
+    color: beige;
+    text-align: center;
+    font-size: 15px;
 }
 .card-body{
     background-color: #DDDDDD;
