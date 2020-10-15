@@ -73,10 +73,11 @@
                 </div>
             </div>
         </nav>
-
+        <br><br>
         <main class="py-4">
             @yield('content')
         </main>
+        <br>    
         <div class="container-fluid">
             <div class="row" id="footer">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
