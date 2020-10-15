@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -9,6 +10,16 @@ body {
 
 #head {
     background: #003B6C;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    height: 100px;
+}
+
+#home {
+    color: white;
+    font-size: x-large;
 }
 
 #footer {

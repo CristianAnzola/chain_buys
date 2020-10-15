@@ -10,39 +10,41 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <div id="head" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    @if (Route::has('login'))
-                        <div class="top-right links">
-                            @auth
-                                <a href="{{ url('/home') }}">Chain Buys</a>
-                            @else
-                                <a href="{{ route('login') }}">Iniciar Sesion</a>
-
-                                @if (Route::has('register'))
-                                    <a href="{{ route('register') }}">Registro</a>
-                                @endif
-                            @endauth
+            <div id="head" class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="d-flex bd-highlight mb-3">
+                        <div class="p-2 bd-highlight"><a href="{{ url('/') }}"><p id="home">Chain Buys</p></a></div>
+                        <div class="p-2 bd-highlight"></div>
+                        <div class="ml-auto p-2 bd-highlight">
+                            @if (Route::has('login'))
+                                @auth
+                                    <a href="{{ url('/home') }}">Chain Buys</a>
+                                @else
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="" alt="">
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="{{ route('login') }}"><button class="dropdown-item" type="button">Iniciar Sesion</button></a>
+                                            @if (Route::has('register'))
+                                                <a href="{{ route('register') }}"><button class="dropdown-item" type="button">Registro</button></a>
+                                            @endif
+                                        </div>
+                                    </div>
+                                @endauth
+                            @endif
                         </div>
-                    @endif
+                    </div>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img src="" alt="">
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <button class="dropdown-item" type="button">Inicio Sesion</button>
-                      <button class="dropdown-item" type="button">Registro</button>
-                    </div>
-                </div>                  
+            <div class="content">                
                 <div id="carrusel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
