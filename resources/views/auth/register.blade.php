@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Tienda') }}</label>
+                            <label for="Tienda" class="col-md-4 col-form-label text-md-right">{{ __('Tienda') }}</label>
 
                             <div class="col-md-6">
                                 <select id="tienda" type="" class="form-control @error('tienda') is-invalid @enderror" name="tienda" value="{{ old('tienda') }}" required autocomplete="tienda">
