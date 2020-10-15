@@ -48,13 +48,13 @@
                     <div id="carrusel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                              <img src="{{ asset('img/Desarrollo-de-Productos-para-Retail1.jpg') }}" height="80%" class="d-block w-100" alt="..." placeholder="imagen">
+                              <img src="{{ asset('img/Desarrollo-de-Productos-para-Retail1.jpg') }}" class="d-block w-100" alt="..." placeholder="imagen">
                             </div>
                             <div class="carousel-item">
-                              <img src="{{ asset('img/2.jpg') }}" height="80%" class="d-block w-100" alt="...">
+                              <img src="{{ asset('img/2.jpg') }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                             <img src="{{ asset('img/3.jpg') }}" height="80%" class="d-block w-100" alt="...">
+                             <img src="{{ asset('img/3.jpg') }}" class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                 <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                     
                 </div>
-                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <div id="tex">
                         <h1>Bienvenidos</h1><br>
                         <h4>
