@@ -88,3 +88,6 @@ body {
 .card-body{
     background-color: #DDDDDD;
 }
+.card{
+    padding-top: 40px;
+}
