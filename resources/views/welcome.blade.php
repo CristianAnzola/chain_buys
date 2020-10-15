@@ -60,13 +60,13 @@
                     <div id="carrusel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                              <img src="{{ asset('img/Desarrollo-de-Productos-para-Retail1.jpg') }}" class="d-block w-100" alt="..." placeholder="imagen">
+                              <img src="{{ asset('img/Desarrollo-de-Productos-para-Retail1.jpg') }}" class="d-block w-100" alt="..." >
                             </div>
                             <div class="carousel-item">
-                              <img src="{{ asset('img/2.jpg') }}" class="d-block w-100" alt="...">
+                              <img src="{{ asset('img/selling-products-online.jpg') }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                             <img src="{{ asset('img/3.jpg') }}" class="d-block w-100" alt="...">
+                             <img src="{{ asset('img/woman-wearing-face-mask-in-supermarket.jpg') }}" class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <div id="tex">
                         <h1>Bienvenidos</h1><br>
-                        <h4>
+                        <h4 id="texto">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,<br> 
                             possimus magni veniam culpa vitae nesciunt nostrum accusantium at natus<br>
                             corporis voluptatem optio in! Provident minus, corporis alias blanditiis<br>
