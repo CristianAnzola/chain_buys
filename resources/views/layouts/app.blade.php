@@ -19,6 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -76,6 +77,11 @@
         <main class="py-4">
             @yield('content')
         </main>
+    </div>
+    <div class="row" id="footer">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p  id="pie">© chain buys 2020</p>
+        </div>
     </div>
 </body>
 </html>
