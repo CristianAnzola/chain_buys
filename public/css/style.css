@@ -21,6 +21,9 @@ body {
     color: white;
     font-size: x-large;
 }
+img{
+width: 100%;
+}
 
 #footer {
     background: #003B6C;
