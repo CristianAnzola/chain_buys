@@ -71,8 +71,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'genero'    => ['required', 'string', 'max:250'],
-            'tienda'   => 'string'],
+            
         );
     }
 }
