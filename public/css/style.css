@@ -22,8 +22,9 @@ body {
     font-size: x-large;
 }
 
-img{
+#carrusel{
 width: 100%;
+padding: 70%;
 }
 
 #tex{
