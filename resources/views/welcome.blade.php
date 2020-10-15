@@ -43,21 +43,24 @@
                     </div>
                 </div>
             </div>
-
-            <div class="content">                
-                <div id="carrusel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="" class="d-block w-100" alt="..." placeholder="imagen">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                         <img src="..." class="d-block w-100" alt="...">
-                        </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="content">                
+                        <div id="carrusel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="" class="d-block w-100" alt="..." placeholder="imagen">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                 <img src="..." class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>    
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </body>
