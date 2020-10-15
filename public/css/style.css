@@ -78,10 +78,11 @@ body {
     text-align: center;
 }
 .card-header{
-    background-color: #003b6c;
+    background-color: #ffa554;
     color: beige;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
+    padding: 25px;
 }
 .card-body{
     background-color: #DDDDDD;
