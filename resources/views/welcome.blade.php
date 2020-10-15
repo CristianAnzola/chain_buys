@@ -51,10 +51,10 @@
                               <img src="{{ asset('img/Desarrollo-de-Productos-para-Retail1.jpg') }}" class="d-block w-100" alt="..." placeholder="imagen">
                             </div>
                             <div class="carousel-item">
-                              <img src="{{ asset('img/2.jpg') }}" class="d-block w-100" alt="...">
+                              <img src="{{ asset('img/mujer-chaqueta-amarilla-espacio-copia-tarjeta-credito_23-2148674130.jpg') }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                             <img src="{{ asset('img/3.jpg') }}" class="d-block w-100" alt="...">
+                             <img src="{{ asset('img/nina-posando-pala-tienda_85574-2400.jpg') }}" class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
