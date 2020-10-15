@@ -64,9 +64,14 @@
         </div>
         <div class="container-fuid">
             <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" id="">
-               <button>
+               <button id="factura">
+                   Factura
+               </button>
             </div>
-        </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar Producto</button>
+              </form>
         <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
             <p  id="pie">
                 <img src="{{ asset('img/logo.png') }}" width="100px"><br>
