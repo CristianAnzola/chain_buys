@@ -23,7 +23,8 @@ body {
 }
 
 #carrusel{
-width: 50%;
+width: 100%;
+padding: 70%;
 }
 
 #tex{
