@@ -17,22 +17,22 @@ body {
     height: 150px;
 }
 
-#nav{
+#nav {
     margin-top: 15px;
 }
 
-#nav1{
+#nav1 {
     margin-top: 30px;
 }
 
-#logo{
+#logo {
     margin: auto;
     position: relative;
     top: -15px;
     left: 20px;
 }
 
-#log{
+#log {
     margin-left: 160px;
 }
 
@@ -41,18 +41,20 @@ body {
     font-size: x-large;
 }
 
-#carrusel{
+#carrusel {
     width: 100%;
 }
-.carousel-inner{
+
+.carousel-inner {
     height: 600px;
 }
-.carousel-inner img{
- width: 100%;
- max-height: 600px;
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 600px;
 }
 
-#tex{
+#tex {
     background: #ffa554;
     border-radius: 25px;
     padding-top: 15px;
@@ -61,11 +63,12 @@ body {
     padding-bottom: 15px;
     text-align: center;
 }
-#texto{
+
+#texto {
     font-size: 1.3vw;
 }
 
-#cont{
+#cont {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -74,23 +77,47 @@ body {
     background: #003b6c;
 }
 
-#pie{
+#pie {
     padding-top: 26px;
     padding-bottom: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
 }
-.card-header{
+
+.card-header {
     background-color: #ffa554;
     color: beige;
     text-align: center;
     font-size: 25px;
     padding: 35px;
 }
-.card-body{
+
+.card-body {
     background-color: #DDDDDD;
 }
-#factura{
+
+#factura {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     border-radius: 15px;
-    background:#ffa554;
+    background: #ffa554;
+}
+
+#busque {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(255, 0, 0, 0.432);
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#inbus {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 50%;
 }
