@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class indexController extends Controller
+class IndexController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -14,6 +14,7 @@ class indexController extends Controller
      */
     public function __construct()
     {
+        $this->middleware('auth');
     }
 
     /**
@@ -21,8 +22,13 @@ class indexController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function Index()
     {
-        return view('pag.index');
+        return view('pag.Index');
+    }
+
+    public function Facturas()
+    {
+        return view('pag.Facturas');
     }
 }
