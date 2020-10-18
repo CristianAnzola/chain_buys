@@ -21,6 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('pag/index', 'IndexController@index')->name('pag/index');
-Route::get('pag/facturas', 'IndexController@index')->name('pag/facturas');
-Route::get('pag/perfil', 'IndexController@index')->name('pag/perfil');
+Route::get('/pag/inicio', 'IndexController@inicio')->name('pag/inicio');
+Route::get('/pag/facturas', 'IndexController@facturas')->name('pag/facturas');
+Route::get('/pag/perfil', 'IndexController@perfil')->name('pag/perfil');

@@ -14,7 +14,7 @@ class IndexController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -22,14 +22,14 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function Index()
+    public function Inicio()
     {
-        return view('pag.Index');
+        return view('pag.inicio');
     }
 
     public function Facturas()
     {
-        return view('pag.Facturas');
+        return view('pag.facturas');
     }
 
     public function Perfil()
