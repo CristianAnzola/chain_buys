@@ -19,23 +19,33 @@
                         <form id="busque">
                             <input type="text" id="id" placeholder="id">
                             <br>
+                            <br>
                             <input type="text" id="empresa" placeholder="empresa">
+                            <br>
                             <br>
                             <input type="text" id="codigo" placeholder="codigofactura">
                             <br>
+                            <br>
                             <input type="text" id="usuario" placeholder="Usuario">
+                            <br>
                             <br>
                             <input type="text" id="cliente" placeholder="cliente">
                             <br>
+                            <br>
                             <input type="text" id="producto" placeholder="producto">
+                            <br>
                             <br>
                             <input type="text" id="telefono" placeholder="telefono">
                             <br>
+                            <br>
                             <input type="date" id="fecha" placeholder="fecha">
+                            <br>
                             <br>
                             <input type="text" id="subtotal" placeholder="subtotal">
                             <br>
+                            <br>
                             <input type="text" id="total" placeholder="total">
+                            <br>
                             <br>
                             <button class="btn btn-form" id="ingresar">Ingresar</button>
                             
