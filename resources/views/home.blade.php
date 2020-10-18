@@ -15,6 +15,11 @@
                     @endif
 
                     {{ __('Bienvenido!') }}
+
+                    
+                    <a href="{{ route('pag/inicio') }}">index</a><br>
+                    <a href="{{ route('pag/facturas') }}">facturas</a><br>
+                    <a href="{{ route('pag/perfil') }}">perfil</a><br>
                 </div>
             </div>
         </div>

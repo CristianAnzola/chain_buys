@@ -80,9 +80,6 @@
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <div id="tex">
                         <h1>Bienvenidos</h1><br>
-                        <a href="{{ route('pag/inicio') }}">index</a><br>
-                        <a href="{{ route('pag/facturas') }}">facturas</a><br>
-                        <a href="{{ route('pag/perfil') }}">perfil</a><br>
                         <h4 id="texto">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,<br> 
                             possimus magni veniam culpa vitae nesciunt nostrum accusantium at natus<br>
