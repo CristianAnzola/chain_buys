@@ -31,4 +31,9 @@ class IndexController extends Controller
     {
         return view('pag.Facturas');
     }
+
+    public function Perfil()
+    {
+        return view('pag.perfil');
+    }
 }

@@ -82,6 +82,7 @@
                         <h1>Bienvenidos</h1><br>
                         <a href="{{ route('pag/index') }}">index</a>
                         <a href="{{ route('pag/facturas') }}">facturas</a>
+                        <a href="{{ route('pag/perfil') }}">facturas</a>
                         <h4 id="texto">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,<br> 
                             possimus magni veniam culpa vitae nesciunt nostrum accusantium at natus<br>
