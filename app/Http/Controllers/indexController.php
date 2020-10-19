@@ -41,6 +41,10 @@ class IndexController extends Controller
         return view('pag.auxfactura');
     }
 
+    public function Productos()
+    {
+        return view('pag.productos');
+    }
 
     public function store(Request $request)
     {

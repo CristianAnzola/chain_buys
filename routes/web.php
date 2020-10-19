@@ -25,5 +25,6 @@ Route::get('/pag/inicio', 'IndexController@inicio')->name('pag/inicio');
 Route::get('/pag/facturas', 'IndexController@facturas')->name('pag/facturas');
 Route::get('/pag/perfil', 'IndexController@perfil')->name('pag/perfil');
 Route::get('/pag/aux', 'IndexController@auxfactura')->name('pag/aux');
+Route::get('/pag/productos', 'IndexController@productos')->name('pag/productos');
 
 Route::resource('/pag', 'IndexController');

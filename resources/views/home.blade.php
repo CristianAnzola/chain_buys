@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Bienvenido') }}<br>{{ Auth::user()->name }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,12 +14,17 @@
                         </div>
                     @endif
 
-                    {{ __('Bienvenido!') }}
-
-                    
-                    <a href="{{ route('pag/inicio') }}">index</a><br>
-                    <a href="{{ route('pag/facturas') }}">facturas</a><br>
-                    <a href="{{ route('pag/perfil') }}">perfil</a><br>
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <a href="{{ route('pag/facturas') }}">Facturas</a><br>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <a href="{{ route('pag/productos') }}">Productos</a><br>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <a href="{{ route('pag/perfil') }}">perfil</a><br>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

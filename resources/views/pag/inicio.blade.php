@@ -75,17 +75,6 @@
                                 </div>
                                 <div class="col-2 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
                             </div>
-                            
-                            <div class="row" id="dist">
-                                <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
-                                <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                                    <label id="impu1" for="producto">{{ 'producto' }}</label>
-                                </div>
-                                <div class="col-5 col-sm-5 col-md-4 col-lg-4 col-xl-4">
-                                    <input id="impu" type="text" id="fac_producto" name="fac_producto">
-                                </div>
-                                <div class="col-2 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
-                            </div>
                                 
                             <div class="row" id="dist">
                                 <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3"></div>
