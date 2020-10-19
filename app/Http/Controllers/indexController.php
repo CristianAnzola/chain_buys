@@ -43,7 +43,9 @@ class IndexController extends Controller
 
     public function Productos()
     {
-        return view('pag.productos');
+        $datoss['productos']=Producto::paginate(5);
+
+        return view('pag.productos',$datoss);
     }
 
     public function store(Request $request)
@@ -54,6 +56,18 @@ class IndexController extends Controller
 
         Facturas::insert($datosfactura);
         return redirect('pag/facturas');
+
+        //return response()->json($datosfactura);
+    }
+
+    public function storepro(Request $request)
+    {
+       // $datosfactura=request()->all();
+
+        $datosproducto=request()->except('_token'); 
+
+        Producto::insert($datosproducto);
+        return redirect('pag/productos');
 
         //return response()->json($datosfactura);
     }
