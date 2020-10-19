@@ -30,6 +30,11 @@ class IndexController extends Controller
         return view('pag.perfil');
     }
 
+    public function Auxfactura()
+    {
+        return view('pag.auxfactura');
+    }
+
 
     public function store(Request $request)
     {

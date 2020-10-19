@@ -26,9 +26,11 @@ body {
 }
 
 #logo {
+    width: 80%;
     margin: auto;
+    margin-top: 5%;
     position: relative;
-    top: -15px;
+    top: -20px;
     left: 20px;
 }
 
@@ -138,6 +140,7 @@ body {
 
 #conten {
     margin-top: 30px;
+    margin-bottom: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
     background: rgb(221, 221, 221);
@@ -173,4 +176,49 @@ body {
     margin-right: 10%;
     height: 20px;
     font-size: 1vw;
+}
+
+#impu {
+    width: 100%;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+}
+
+#impu1 {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid rgba(160, 160, 160, 0);
+    text-align: right;
+}
+
+#boton {
+    margin-top: 5px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 15px;
+    background: rgb(255, 166, 88);
+    border: 1px solid rgb(255, 166, 88);
+}
+
+#boton:hover {
+    margin-top: 5px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 15px;
+    background: rgb(255, 184, 122);
+    border: 1px solid rgb(209, 136, 73);
+}
+
+#dist {
+    margin-top: 2px;
+}
+
+#centro {
+    text-align: center;
 }
