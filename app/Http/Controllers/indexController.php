@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Facturas;
 use App\Http\Controllers\Controller;
+use App\Producto;
 use Illuminate\Http\Request;
 use Session;
 use Redirect;
@@ -18,11 +19,16 @@ class IndexController extends Controller
     public function Inicio()
     {
         return view('pag.inicio');
+        
     }
 
     public function Facturas()
     {
-        return view('pag.facturas');
+        $datos['facturas']=Facturas::paginate(5);
+
+        $dato['productos']=Producto::paginate(5);
+        
+        return view('pag.facturas',$datos,$dato);
     }
 
     public function Perfil()
