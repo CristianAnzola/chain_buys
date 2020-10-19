@@ -21,7 +21,7 @@ class CreateTbFacturaTable extends Migration
             $table->string('fac_cliente');
             $table->Integer('fac_producto');
             $table->string('fac_telefono');
-            $table->string('fac_fecha');
+            $table->date('fac_fecha');
             $table->double('fac_subtotal', 10, 2);
             $table->double('fac_total', 10, 2);
         });

@@ -16,38 +16,59 @@
                 <div class="row">
                     <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
                     <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                        <form id="busque">
-                            <input type="text" id="id" placeholder="id">
+                        <form action="{{ url('/pag') }}" method="POST">
+                            {{ csrf_field() }}
+                            <label for="id">{{ 'id' }}</label>
+                        
+                            <input type="text" id="fac_id" name="fac_id">
                             <br>
                             <br>
-                            <input type="text" id="empresa" placeholder="empresa">
+                            <label for="empresa">{{ 'empresa' }}</label>
+
+                            <input type="text" id="fac_empresa" name="fac_empresa">
                             <br>
                             <br>
-                            <input type="text" id="codigo" placeholder="codigofactura">
+                            <label for="codigo">{{ 'codigo' }}</label>
+
+                            <input type="text" id="fac_codigo" name="fac_codigo">
                             <br>
                             <br>
-                            <input type="text" id="usuario" placeholder="Usuario">
+                            <label for="usuario">{{ 'usuario' }}</label>
+
+                            <input type="text" id="fac_usuario" name="fac_usuario">
                             <br>
                             <br>
-                            <input type="text" id="cliente" placeholder="cliente">
+                            <label for="cliente">{{ 'cliente' }}</label>
+
+                            <input type="text" id="fac_cliente" name="fac_cliente">
                             <br>
                             <br>
-                            <input type="text" id="producto" placeholder="producto">
+                            <label for="producto">{{ 'producto' }}</label>
+                            
+                            <input type="text" id="fac_producto" name="fac_producto">
                             <br>
                             <br>
-                            <input type="text" id="telefono" placeholder="telefono">
+                            <label for="telefono">{{ 'telefono' }}</label>
+                            
+                            <input type="text" id="fac_telefono" name="fac_telefono">
                             <br>
                             <br>
-                            <input type="date" id="fecha" placeholder="fecha">
+                            <label for="fecha">{{ 'fecha' }}</label>
+
+                            <input type="date" id="fac_fecha" name="fac_fecha">
                             <br>
                             <br>
-                            <input type="text" id="subtotal" placeholder="subtotal">
+                            <label for="subtotal">{{ 'subtotal' }}</label>
+
+                            <input type="text" id="fac_subtotal" name="fac_subtotal">
                             <br>
                             <br>
-                            <input type="text" id="total" placeholder="total">
+                            <label for="total">{{ 'total' }}</label>
+
+                            <input type="text" id="fac_total" name="fac_total">
                             <br>
                             <br>
-                            <button class="btn btn-form" id="ingresar">Ingresar</button>
+                            <input type="submit" value="agregar">
                             
                         </form>
                     </div>

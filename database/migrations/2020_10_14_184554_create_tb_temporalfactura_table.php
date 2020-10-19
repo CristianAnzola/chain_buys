@@ -21,7 +21,7 @@ class CreateTbTemporalfacturaTable extends Migration
             $table->string('temp_cliente');
             $table->Integer('temp_producto');
             $table->string('temp_telefono');
-            $table->string('temp_fecha');
+            $table->date('temp_fecha');
             $table->double('temp_subtotal');
             $table->double('temp_total');
         });
