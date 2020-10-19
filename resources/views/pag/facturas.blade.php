@@ -15,12 +15,12 @@
                 <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
             </div>
             <div class="row">
-                <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
                     <table id="tablas">
                         <h2>Facturas</h2>
                         <tr>
                             <th>Id</th>
-                            <th>Empresa</th>
+                            <th>Nit</th>
                             <th>Codigo</th>
                             <th>Usuario</th> 
                             <th>Cliente</th>
@@ -34,16 +34,15 @@
                         @foreach($facturas as $factura)
                             
                         <tr>
-                            <td><label id="inpu">{{ $factura->fac_id }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_empresa }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_codigo }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_usuario }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_cliente }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_producto }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_telefono }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_fecha }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_subtotal }}</label></td>
-                            <td><label id="inpu">{{ $factura->fac_total }}</label></td>
+                            <td id="in" id="in"><label id="inpu">{{ $factura->fac_id }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_empresa }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_codigo }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_usuario }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_cliente }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_telefono }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_fecha }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_subtotal }}</label></td>
+                            <td id="in"><label id="inpu">{{ $factura->fac_total }}</label></td>
 
                         </tr> 
                             
@@ -51,7 +50,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <table id="tablas">
                         <h2>Productos</h2>
                         <tr>
@@ -63,10 +62,10 @@
                         <tr>
                             @foreach($productos as $producto)
 
-                            <td><label id="inpu">{{ $producto->pro_id }}</label></td>
-                            <td><label id="inpu">{{ $producto->pro_descripcion }}</label></td>
-                            <td><label id="inpu">{{ $producto->pro_imagen }}</label></td>
-                            <td><label id="inpu">{{ $producto->pro_proveedor }}</label></td>
+                            <td id="in"><label id="inpu">{{ $producto->pro_id }}</label></td>
+                            <td id="in"><label id="inpu">{{ $producto->pro_descripcion }}</label></td>
+                            <td id="in"><label id="inpu">{{ $producto->pro_imagen }}</label></td>
+                            <td id="in"><label id="inpu">{{ $producto->pro_proveedor }}</label></td>
 
                             @endforeach
                         </tr>
