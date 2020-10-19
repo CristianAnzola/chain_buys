@@ -10,8 +10,8 @@ class Producto extends Model
 
     protected $fillable = ['pro_id', 'pro_proveedor', 'pro_descripcion', 'pro_imagen'];
 
-    public function User()
+    public function productoprecio()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Productoprecio');
     }
 }

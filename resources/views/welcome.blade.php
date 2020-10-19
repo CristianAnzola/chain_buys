@@ -35,9 +35,11 @@
                         <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                             @if (Route::has('login'))
                                 @auth
-                                <div id="nav1">
-                                    <a href="{{ url('/home') }}">Chain Buys</a>
-                                </div>
+                                <a id="nav1" href="{{ url('/home') }}">
+                                    <button type="button" class="btn btn-secondary">
+                                        <img src="{{ asset('img/casa.png') }}" width="50px">
+                                    </button>
+                                </a>
                                 @else
                                     <div class="btn-group" id="nav">
                                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

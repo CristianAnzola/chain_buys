@@ -43,9 +43,15 @@ class IndexController extends Controller
 
     public function Productos()
     {
-        $datoss['productos']=Producto::paginate(5);
+        $datoss = Producto::select('pro_id', 'pro_nombre', 'pro_descripcion', 'pro_imagen', 'pro_proveedor')->with('productoprecio:prp_id')->get();
+        
+        return view('pag.productos', compact('datoss'));
+        
+        //$datoss = Producto::select('pro_id', 'pro_nombre', 'prp_stock', 'prp_cantidad', 'prp_costo', 'pro_descripcion', 'pro_imagen', 'pro_proveedor')->join('tb_producto', 'tb_producto.pro_id', '=', 'tb_productoprecio.prp_id')->where('tb_producto.pro_id','tb_productoprecio.prp_id')->get();
 
-        return view('pag.productos',$datoss);
+        //$datoss['productos']=Producto::paginate(5);
+
+       //return view('pag.productos',$datoss);
     }
 
     public function store(Request $request)

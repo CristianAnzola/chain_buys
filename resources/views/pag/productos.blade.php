@@ -15,7 +15,7 @@
                             <th>provedor</th>
                         </tr>
                         <tr>
-                            @foreach($productos as $producto)
+                            @foreach($datoss as $producto)
 
                             <td id="in"><label id="inpu">{{ $producto->pro_id }}</label></td>
                             <td id="in"><label id="inpu">{{ $producto->pro_descripcion }}</label></td>

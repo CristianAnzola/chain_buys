@@ -56,12 +56,11 @@
                                         </li>
                                     @endif
                                 @else
-                                    
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->name }}
-                                    </a>
-
-                                    <div class="" aria-labelledby="navbarDropdown">
+                                    <div id="centro" aria-labelledby="navbarDropdown">
+                                        <a>
+                                            {{ Auth::user()->name }}
+                                        </a>
+                                        <hr>
                                         <a class="" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
