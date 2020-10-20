@@ -11,6 +11,9 @@
                         <tr>
                             <th>Codigo</th>
                             <th>descripcion</th>
+                            <th>descripcion</th>
+                            <th>descripcion</th>
+                            <th>descripcion</th>
                             <th>imagen</th>
                             <th>provedor</th>
                         </tr>
@@ -18,6 +21,9 @@
                             @foreach($datoss as $producto)
 
                             <td id="in"><label id="inpu">{{ $producto->pro_id }}</label></td>
+                            <td id="in"><label id="inpu">{{ $producto->prp_stock }}</label></td>
+                            <td id="in"><label id="inpu">{{ $producto->prp_cantidad }}</label></td>
+                            <td id="in"><label id="inpu">{{ $producto->prp_costo }}</label></td>
                             <td id="in"><label id="inpu">{{ $producto->pro_descripcion }}</label></td>
                             <td id="in"><label id="inpu">{{ $producto->pro_imagen }}</label></td>
                             <td id="in"><label id="inpu">{{ $producto->pro_proveedor }}</label></td>

@@ -43,15 +43,17 @@ class IndexController extends Controller
 
     public function Productos()
     {
-        $datoss = Producto::select('pro_id', 'pro_nombre', 'pro_descripcion', 'pro_imagen', 'pro_proveedor')->with('productoprecio:prp_id')->get();
+        //$datoss = Producto::select('pro_id', 'pro_nombre', 'pro_descripcion', 'pro_imagen', 'pro_proveedor')->with('productoprecio:prp_id')->get();
         
-        return view('pag.productos', compact('datoss'));
-        
-        //$datoss = Producto::select('pro_id', 'pro_nombre', 'prp_stock', 'prp_cantidad', 'prp_costo', 'pro_descripcion', 'pro_imagen', 'pro_proveedor')->join('tb_producto', 'tb_producto.pro_id', '=', 'tb_productoprecio.prp_id')->where('tb_producto.pro_id','tb_productoprecio.prp_id')->get();
+        $datoss = Producto::join('tb_productoprecio', 'pro_id', '=', 'prp_id')
+        ->select('pro_id', 'pro_nombre', 'prp_stock', 'prp_cantidad', 'prp_costo', 'pro_descripcion', 'pro_imagen', 'pro_proveedor')
+        ->where('pro_id', '=', 'prp_id')->get();
 
         //$datoss['productos']=Producto::paginate(5);
 
-       //return view('pag.productos',$datoss);
+        //return view('pag.productos',$datoss);
+        
+        return view('pag.productos', compact('datoss'));
     }
 
     public function store(Request $request)
